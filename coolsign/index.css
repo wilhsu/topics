@@ -1,0 +1,98 @@
+@font-face {
+    font-family: jinmei;
+    src: url(jinmeimaoxingshu.TTF);
+}
+
+body{
+    margin:0;
+    background-image: linear-gradient(yellow 80%, green);
+    height: 100vh;
+}
+  
+  .texts{
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+  }
+
+  .big{
+    height: 100vh;
+    background-image: linear-gradient(yellow 80%, green);
+
+  }
+
+/* code referenced from:
+https://stackoverflow.com/questions/16782498/looping-animation-of-text-color-change-using-css3 */
+  #dynamic {
+    position: fixed;
+    top: 75%;
+    left: 5%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+
+    font-family:arial black;
+    font-size:65px;
+    background-image: 
+      linear-gradient(to right, red, brown, indigo, blue,indigo,brown, red); 
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
+    animation: rainbow-animation 80s linear infinite;
+  }
+  
+  @keyframes rainbow-animation {
+      to {
+          background-position: 4500vh;
+      }
+  }
+  
+  h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(205, 10, 10);
+    font-size: 85px;
+    line-height: 2px;
+    text-shadow: 4px 4px 2px white;
+  }
+
+h1:hover{
+    text-shadow: 0 0 10px rgb(205, 10, 10);
+    color: white;
+}
+  
+  h2{
+    font-family: helvetica, sans-serif;
+    color: black;
+    line-height: 40px;
+  }
+  
+  h3{
+    text-align: center;
+    font-size: 50px;
+  }
+
+  #space{
+    height: 100px;
+  }
+
+  .oval{
+    /* width: 750px;
+    height: 500px; */
+    position: relative;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    background-color: transparent;
+    /* stroke: red; */
+    /* border-radius: 10000px; */
+    z-index: 0;
+  }
+  
+  
+  
